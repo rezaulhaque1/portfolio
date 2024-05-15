@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-text"></div>
+        <p>web Developer</p>
+        <h1>
+          Hi I am <span>Rezaul Haque</span><br />
+          From India
+        </h1>
+      </div>
+    </div>
+    <!--..........................about section ...........  -->
+    <div id="About">
+      <div id="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/abcdhghgsh-fotor-bg-remover-2024050905634.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About me</h1>
+            <p>
+              Md. Rezaul Haque is a dedicated web developer with a passion for
+              creating seamless and dynamic user experiences. With a keen eye
+              for design and a strong foundation in coding, he specializes in
+              bringing innovative web solutions to life. His expertise lies in a
+              range of technologies including HTML, CSS, JavaScript, and various
+              web development frameworks. Md. Rezaul Haque is committed to
+              continuous learning and staying abreast of the latest industry
+              trends, ensuring that his work not only meets but exceeds client
+              expectations.
+            </p>
+            <div class="tab-tittle">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                experience
+              </p>
+              <p class="tab-links" onclick="opentab('Education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span> Web development</span><br />
+                  web app development
+                </li>
+                <li><span> App development </span> <br />Android /ios app</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span> Web development</span><br />
+                  web app development
+                </li>
+                <li><span> App development </span> <br />Android /ios app</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Education">
+              <ul>
+                <li>
+                  <span> Web development</span><br />
+                  web app development
+                </li>
+                <li><span> App development </span> <br />Android /ios app</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var tablinks = docoment.getElementsByClassName("tab-links");
+      var tabcontents = docoment.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+      }
+    </script>
+  </body>
+</html>
